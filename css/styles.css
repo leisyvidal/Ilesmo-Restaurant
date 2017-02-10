@@ -1,6 +1,13 @@
 @font-face{
-    
-}
+    font-family: Gilroy;
+    src:url(../fonts/Gilroy-Light.otf);
+    font-weight:normal;
+    }
+@font-face{
+    font-family: GilroyBold;
+    src:url(../fonts/Gilroy-ExtraBold.otf);
+    font-weight:normal;
+    }
 html{
     box-sizing:border-box;
     }
@@ -12,7 +19,7 @@ html{
 
 body{
 	margin:0px;
-	font: 16px Arial, sans-serif;
+	font: 16px Gilroy, sans-serif;
 	background-color:#FFF;
 	font-size:1em;
 	}
@@ -41,11 +48,11 @@ a{
 
 /*Start highlight colors*/
 ::selection {
-    background-color: #FF3333; 
+    background-color: #F2E422; 
     color: #FFFFFF;
     }
 ::-moz-selection { 
-    background-color: #FF3333; 
+    background-color: #F2E422; 
     color: #FFFFFF;
     }
 /*End highlight colors*/
@@ -81,16 +88,54 @@ nav a:last-child{
 	}	
 /*//////End Nav//////*/
 
-/*//////Start Container//////*/
-.container{
+/*//////Start Main Container//////*/
+main{
 	width:100%;
     display:inline-block;
 	margin-top:58px;
 	}
-/*//////End Container//////*/
+/*//////End Main Container//////*/
 
 
 /*//////Start Grid//////*/
+.row{
+    width:100%;
+    display: block;
+    }
+/*Clear the row*/
+.row::after{
+    content:"";
+    display: table;
+    clear: both;
+    }
+.col-12of12{
+    width:98%;
+    background: purple;
+}
+.col-8of12{
+    width:64.66%;
+    background: red;
+}
+.col-6of12{
+    width:48%;
+    background: green;
+}
+.col-4of12{
+    width:31.33%;
+    background: blue;
+}
+.col-3of12{
+    width:23%;
+    background: yellow;
+}
+/*Any class that starts with col-*/
+[class*='col-']{
+    margin: 1%;
+    padding: 1%;
+    float:left;
+    /*internet explorer hack*/
+    min-height: 100px;
+    }
 
 /*//////End Grid//////*/
 
