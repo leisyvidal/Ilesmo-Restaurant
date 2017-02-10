@@ -1,0 +1,101 @@
+@font-face{
+    
+}
+html{
+    box-sizing:border-box;
+    }
+*,
+*:before,
+*:after{
+    box-sizing:border-box;
+    }
+
+body{
+	margin:0px;
+	font: 16px Arial, sans-serif;
+	background-color:#FFF;
+	font-size:1em;
+	}
+
+/*//////Start Fonts//////*/
+h1{
+	font-size:3em;
+	}
+h2{
+    
+    }
+h3{
+    
+    }
+h4{
+    
+    }
+p{
+    
+    }
+
+a{
+	color:black;
+	text-decoration:none;
+	}
+
+/*Start highlight colors*/
+::selection {
+    background-color: #FF3333; 
+    color: #FFFFFF;
+    }
+::-moz-selection { 
+    background-color: #FF3333; 
+    color: #FFFFFF;
+    }
+/*End highlight colors*/
+/*//////End Fonts//////*/
+
+
+/*//////Start Nav//////*/
+header{
+	width:96%;
+	padding:10px 2%;
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:white;
+	text-align:right;
+	letter-spacing: 1px;
+	}
+.logo{
+    float:left;
+    }
+header h1{
+    font-size: 1.2em;
+    }
+nav{
+    float:right;
+    margin-top: 16px;
+    }
+nav a{
+    margin-right:30px;
+	}	
+nav a:last-child{
+    margin-right:0px;
+	}	
+/*//////End Nav//////*/
+
+/*//////Start Container//////*/
+.container{
+	width:100%;
+    display:inline-block;
+	margin-top:58px;
+	}
+/*//////End Container//////*/
+
+
+/*//////Start Grid//////*/
+
+/*//////End Grid//////*/
+
+
+
+/*//////Start Footer//////*/
+	
+/*//////End Footer//////*/
