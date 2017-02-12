@@ -8,6 +8,12 @@
     src:url(../fonts/Gilroy-ExtraBold.otf);
     font-weight:normal;
     }
+@font-face{
+    font-family: AmelianScript;
+    src:url(../fonts/AmelianScript.otf);
+    font-weight:normal;
+    }
+
 html{
     box-sizing:border-box;
     }
@@ -38,7 +44,11 @@ h4{
     
     }
 p{
-    
+    font-family: Gilroy;
+    font-size: 20px;
+    color: #6E6E6E;
+    letter-spacing: 0.32px;
+    line-height: 26px;
     }
 
 a{
@@ -62,26 +72,35 @@ a{
 /*//////Start Nav//////*/
 header{
 	width:96%;
-	padding:10px 2%;
+	padding:40px 2% 10px 2%;
 	position:absolute;
 	top:0;
 	left:0;
-	background-color:white;
 	text-align:right;
 	letter-spacing: 1px;
 	}
 .logo{
     float:left;
+    margin-left: 15px;
     }
 header h1{
-    font-size: 1.2em;
+    font-family: AmelianScript;
+    font-size: 50px;
+    color: #FFFFFF;
+    letter-spacing: 1.56px;
+    
     }
 nav{
     float:right;
-    margin-top: 16px;
+    margin-top: 20px;
     }
 nav a{
-    margin-right:30px;
+    margin-right:50px;
+    font-family: GilroyBold;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 2.54px;
+    text-transform: uppercase;
 	}	
 nav a:last-child{
     margin-right:0px;
@@ -92,7 +111,6 @@ nav a:last-child{
 main{
 	width:100%;
     display:inline-block;
-	margin-top:58px;
 	}
 /*//////End Main Container//////*/
 
@@ -110,24 +128,19 @@ main{
     }
 .col-12of12{
     width:98%;
-    background: purple;
-}
+    }
 .col-8of12{
     width:64.66%;
-    background: red;
-}
+    }
 .col-6of12{
     width:48%;
-    background: green;
-}
+    }
 .col-4of12{
     width:31.33%;
-    background: blue;
-}
+    }
 .col-3of12{
     width:23%;
-    background: yellow;
-}
+    }
 /*Any class that starts with col-*/
 [class*='col-']{
     margin: 1%;
@@ -136,11 +149,160 @@ main{
     /*internet explorer hack*/
     min-height: 100px;
     }
+[class*='col-'] img{
+    width:100%;
+    }
 
 /*//////End Grid//////*/
 
 
 
+/*//////Start Home Page//////*/
+.home1{
+    background: url('../img/home1.jpg') no-repeat center;
+    background-size: 100%;
+    padding:15% 10%;
+    text-align: center;
+    }
+.home1 img{
+    width:40%;
+    }
+
+.home2{
+    background: url('../img/yellowbgs.svg') no-repeat top center;
+    background-size: 100%;
+    padding:2% 10%;
+    text-align: center;
+    }
+.home2 .row{
+    max-width: 800px;
+    margin:0 auto;
+    }
+.home2 .col-4of12{
+    min-height: 450px;
+    }
+.home2 .col-8of12{
+    min-height: 450px;
+    }
+.home2 p{
+    font-family: GilroyBold;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.94px;
+    text-transform: uppercase;
+    color:#FFF;
+    }
+.home2 .col-8of12 p{
+    text-align: left;
+    }
+.noodles{
+    background: url('../img/noodles.jpg') no-repeat center;
+    background-size: cover;
+    }
+.brunch{
+    background: url('../img/brunch.jpg') no-repeat center;
+    background-size: cover;
+    }
+.appetizers{
+    background: url('../img/appetizers.jpg') no-repeat center;
+    background-size: cover;
+    }
+.sushi{
+    background: url('../img/sushi.jpg') no-repeat center;
+    background-size: cover;
+    }
+.dinner{
+    background: url('../img/dinner.jpg') no-repeat center;
+    background-size: cover;
+    }
+
+.home3{
+    background: url('../img/home3.jpg') no-repeat center;
+    background-size: 100%;
+    padding:15% 10%;
+    text-align: center;
+    }
+.home3 img{
+    width:40%;
+    }
+
+.home4 .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.home4 .col-6of12{
+    padding:5%;
+    }
+.home4 .col-6of12:nth-child(2){
+    padding-left:0px;
+    }
+.home4 .col-6of12 h2{
+    font-family: Gilroy-ExtraBold;
+    font-size: 21px;
+    color: #000000;
+    letter-spacing: 1.54px;
+    text-transform: uppercase;
+    }
+.home4 .col-6of12 p{
+    max-width: 450px;
+    }
+.home4 .col-6of12 hr{
+    border:0;
+    border-top:5px solid black;
+    width:27%;
+    display: inline-block;
+    }
+
+.home5 .row{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    }
+.home5 .col-8of12{
+    background:#F2E422;
+    color: #FFF;
+    font-size: 60px;
+    text-align: center;
+    padding: 5%;
+    }
+.home5 .col-8of12 p{
+    font-family: GilroyBold;
+    font-size: 21px;
+    color: #000000;
+    letter-spacing: 1.23px;
+    text-transform: uppercase;
+    max-width: 300px;
+    margin: 20px auto;
+    }
+
+.home5 .col-4of12{
+    background:#E1D218;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    }
+.home5 .col-4of12 p{
+    font-family: GilroyBold;
+    font-size: 50px;
+    letter-spacing: 0.82px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    align-self: center;
+    }
+.home6 .col-4of12, .home7 .col-12of12{
+    padding:0;
+    }
+/*//////End Home Page//////*/
+
+
 /*//////Start Footer//////*/
-	
+/*
+footer{
+    background: #f2e422;
+    color: #FFF;
+    text-align: center;
+    }
+*/
 /*//////End Footer//////*/

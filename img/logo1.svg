@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="445px" height="224px" viewBox="0 0 445 224" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>title</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home" transform="translate(-255.000000, -220.000000)" fill="#FFFFFF">
+            <g id="header" transform="translate(-2.000000, 0.000000)">
+                <g id="title" transform="translate(249.000000, 226.000000)">
+                    <text id="FOOD" font-family="Gilroy-ExtraBold, Gilroy" font-size="21" font-weight="600" letter-spacing="2.11199999">
+                        <tspan x="242.392505" y="197.6">FOOD</tspan>
+                    </text>
+                    <text id="MODERN" font-family="Gilroy-ExtraBold, Gilroy" font-size="21" font-weight="600" letter-spacing="2.11199999">
+                        <tspan x="63.7448176" y="197.6">MODERN</tspan>
+                    </text>
+                    <text id="ilesmo" font-family="AmelianScript, Amelian Script" font-size="240" font-weight="normal" letter-spacing="1.87199993">
+                        <tspan x="8.08400021" y="180">ilesmo</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="956px" height="816px" viewBox="0 0 956 816" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>yellow bgs</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home" transform="translate(-2.000000, -640.000000)">
+            <g id="yellow-bgs" transform="translate(2.000000, 640.000000)">
+                <polygon id="yellow-bar" fill="#F2E422" points="78 0 881 0 881 74 78 74 77 36.2695312"></polygon>
+                <polygon id="yellow-bar-copy" fill="#F2E422" points="479.595771 370 958 370 958 540 479.595771 540 479 453.321896"></polygon>
+                <polygon id="yellow-bar-copy-2" fill="#E1D218" points="0.565920398 575 455 575 455 816 0.565920398 816 0 693.121041"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

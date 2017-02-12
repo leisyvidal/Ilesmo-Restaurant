@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="416px" height="198px" viewBox="0 0 416 198" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>title</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home" transform="translate(-272.000000, -1858.000000)" fill="#FFFFFF">
+            <g id="2" transform="translate(-1.000000, 1653.000000)">
+                <g id="title" transform="translate(178.000000, 201.000000)">
+                    <text id="dinner" font-family="AmelianScript, Amelian Script" font-size="240" font-weight="normal" letter-spacing="1.87199993">
+                        <tspan x="95.2240002" y="180">dinner</tspan>
+                    </text>
+                    <text id="FRESH" font-family="Gilroy-ExtraBold, Gilroy" font-size="21" font-weight="600" letter-spacing="2.11199999">
+                        <tspan x="391" y="198">FRESH</tspan>
+                    </text>
+                    <text id="SERVED" font-family="Gilroy-ExtraBold, Gilroy" font-size="21" font-weight="600" letter-spacing="2.11199999">
+                        <tspan x="153.183818" y="197.6">SERVED</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
