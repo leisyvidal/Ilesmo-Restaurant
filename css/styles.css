@@ -146,8 +146,6 @@ main{
     margin: 1%;
     padding: 1%;
     float:left;
-    /*internet explorer hack*/
-    min-height: 100px;
     }
 [class*='col-'] img{
     width:100%;
@@ -228,14 +226,10 @@ main{
 
 .home4 .row{
     display: flex;
-    justify-content: center;
     align-items: center;
     }
 .home4 .col-6of12{
     padding:5%;
-    }
-.home4 .col-6of12:nth-child(2){
-    padding-left:0px;
     }
 .home4 .col-6of12 h2{
     font-family: Gilroy-ExtraBold;
@@ -253,6 +247,10 @@ main{
     width:27%;
     display: inline-block;
     }
+.home4 .row .col-6of12:first-child{
+    padding-left: 0;
+    margin-left: 0;
+    }
 
 .home5 .row{
     display: flex;
@@ -265,6 +263,10 @@ main{
     font-size: 60px;
     text-align: center;
     padding: 5%;
+    }
+.home5 .col-8of12{ /*get rid of margin and reste to full width grid.*/
+    width:66.66%;;
+    margin:0;
     }
 .home5 .col-8of12 p{
     font-family: GilroyBold;
@@ -282,6 +284,10 @@ main{
     display: flex;
     justify-content: center;
     }
+.home5 .col-4of12{ /*get rid of margin and reset to full width grid.*/
+    width:33.33%;
+    margin:0;
+    }
 .home5 .col-4of12 p{
     font-family: GilroyBold;
     font-size: 50px;
@@ -291,8 +297,38 @@ main{
     color: #000;
     align-self: center;
     }
-.home6 .col-4of12, .home7 .col-12of12{
+/*triangle tail*/
+/*
+.home5 .col-4of12::after { 
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 50px solid #E1D218;
+    top: 64%;
+    left: 0px;
+    margin-left: -14px;
+    z-index: 99;
+    }
+*/
+
+
+.home5 .col-4of12{
+    margin:0;
+    }
+.home6 .col-4of12, .home7 .col-12of12{ /*get rid of margin and reset to full width grid.*/
     padding:0;
+    margin: 0;
+    }
+.home6 .col-4of12{ /*get rid of margin and reset to full width grid.*/
+    width:33.33%;
+    margin-bottom: -1%;
+    }
+.home7 .col-12of12{ /*get rid of margin and reset to full width grid.*/
+    width: 100%;
     }
 /*//////End Home Page//////*/
 
