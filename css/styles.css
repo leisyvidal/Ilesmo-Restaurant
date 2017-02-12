@@ -11,7 +11,7 @@
 @font-face{
     font-family: AmelianScript;
     src:url(../fonts/AmelianScript.otf);
-    font-weight:normal;
+    font-weight:initial;
     }
 
 html{
@@ -72,7 +72,7 @@ a{
 /*//////Start Nav//////*/
 header{
 	width:96%;
-	padding:40px 2% 10px 2%;
+	padding:10px 2%;
 	position:absolute;
 	top:0;
 	left:0;
@@ -88,11 +88,12 @@ header h1{
     font-size: 50px;
     color: #FFFFFF;
     letter-spacing: 1.56px;
+    font-weight: initial;
     
     }
 nav{
     float:right;
-    margin-top: 20px;
+    margin-top: 50px;
     }
 nav a{
     margin-right:50px;
@@ -314,8 +315,6 @@ main{
     z-index: 99;
     }
 */
-
-
 .home5 .col-4of12{
     margin:0;
     }
@@ -331,6 +330,77 @@ main{
     width: 100%;
     }
 /*//////End Home Page//////*/
+
+
+
+/*//////Start Menu Page//////*/
+.menu1{
+    background: url('../img/menu1.jpg') no-repeat center;
+    background-size: 100%;
+    padding:15% 10%;
+    border-bottom: 2px solid #f2e422;
+    }
+.menu2, .menu4, .menu6{
+    text-align: center;
+    }
+.menu2 h2, .menu4 h2, .menu6 h2{
+    background: #f2e422;
+    padding: 15px 25px;
+    font-family: AmelianScript;
+    font-size: 66px;
+    color: #FFFFFF;
+    letter-spacing: 3.56px;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: -5%;
+    font-weight: initial;
+    }
+.menutxt h3{
+    font-family: GilroyBold;
+    font-size: 16px;
+    letter-spacing: 0.94px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    text-align: left;
+    }
+.menutxt h3 span{
+    color: #f2e422;
+    }
+.menutxt p{
+    font-family: Gilroy;
+    font-size: 14px;
+    color: #6E6E6E;
+    letter-spacing: 0.82px;
+    line-height: 1.3em;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: left;
+    }
+.menutxt{
+    padding:7.5%;
+    }
+.menu2 .col-6of12:first-child, .menu4 .col-6of12:first-child, .menu6 .col-6of12:first-child{
+    border-right: 1px solid #E8E8E8;
+    }
+.menu2 .row, .menu4 .row, .menu6 .row{
+    max-width: 950px;
+    margin: 3% auto;
+    }
+.menu3{
+    background: url('../img/menu2.jpg') no-repeat center;
+    background-size: 100%;
+    padding:15% 10%;
+    border-bottom: 2px solid #f2e422;
+    }
+.menu5{
+    background: url('../img/menu3.jpg') no-repeat center;
+    background-size: 100%;
+    padding:15% 10%;
+    border-bottom: 2px solid #f2e422;
+    }
+/*//////End Menu Page//////*/
 
 
 /*//////Start Footer//////*/
