@@ -83,13 +83,15 @@ header{
     float:left;
     margin-left: 15px;
     }
+.logo a{
+    color: #FFFFFF;
+    }
 header h1{
     font-family: AmelianScript;
     font-size: 50px;
     color: #FFFFFF;
     letter-spacing: 1.56px;
     font-weight: initial;
-    
     }
 nav{
     float:right;
@@ -106,6 +108,9 @@ nav a{
 nav a:last-child{
     margin-right:0px;
 	}	
+nav a:hover{
+    color: #f2e422;
+    }
 /*//////End Nav//////*/
 
 /*//////Start Main Container//////*/
@@ -412,3 +417,140 @@ footer{
     }
 */
 /*//////End Footer//////*/
+
+/*//////Start Media Queries//////*/
+@media all and (min-width:568px) and  (max-width:800px){
+    
+}
+
+@media all and (min-width:0px) and  (max-width:568px){
+    /*Nav*/
+    .logo{
+        width:100%;
+        text-align: center;
+        margin-left: 0px;
+        }
+    .logo h1{
+        margin-bottom: 15px;
+        }
+    nav{
+        float: none;
+        text-align: center;
+        }
+    
+    /*Grid*/
+    .col-4of12, .home5 .col-4of12{
+        width: 46%;
+        }
+    .col-6of12{
+        width: 96%;
+        } 
+    .col-8of12{
+        width: 96%;
+        }
+    
+    /*Home Page*/
+    .home1{
+        background: url(../img/home1-mobile.jpg) no-repeat center;
+        }
+    .home1 img{
+        display: none;
+        }     
+    .home2{
+        display: inline-block;
+        width: 100%;
+        }
+    .home2 .col-4of12{    
+        min-height: 250px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+    .home2 .row::after{
+        display:none;
+        }
+    .home2 .col-8of12{
+        padding: 0;
+        min-height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+    .home2 .col-8of12 p{
+        text-align: center;
+        }
+    .noodles{
+        background: linear-gradient(to bottom right,rgba(0,0,0,.4),rgba(0,0,0,.1)), url('../img/noodles.jpg') no-repeat center;
+        background-size: cover;
+        }
+    .brunch{
+        background: linear-gradient(to bottom right,rgba(0,0,0,.4),rgba(0,0,0,.1)), url('../img/brunch.jpg') no-repeat center;
+        background-size: cover;
+        }
+    .appetizers{
+        background: linear-gradient(to bottom right,rgba(0,0,0,.4),rgba(0,0,0,.1)), url('../img/appetizers.jpg') no-repeat center;
+        background-size: cover;
+        }
+    .sushi{
+        background: linear-gradient(to bottom right,rgba(0,0,0,.4),rgba(0,0,0,.1)), url('../img/sushi.jpg') no-repeat center;
+        background-size: cover;
+        }
+    .dinner{
+        background: linear-gradient(to bottom right,rgba(0,0,0,.4),rgba(0,0,0,.1)), url('../img/dinner.jpg') no-repeat center;
+        background-size: cover;
+        }
+    
+    
+    
+    .home3 img{
+        width:80%;
+        }
+    .home4 .row{
+        display: block;
+        }
+    .home4 .col-6of12:nth-child(2){
+        padding:15%;
+        }
+    .home5 .col-8of12{
+        width:100%;
+        }
+    .home5 .col-4of12{
+        width:33.33%;
+        }
+    .home5 .col-4of12 p{
+        font-size: 20px;
+        }
+    .home5 .row{
+        display: inline;
+        }
+    
+
+    
+    /*Menu Page*/
+    .menu1{
+        min-height: 150px;
+        }
+    .menu2 h2, .menu4 h2, .menu6 h2{
+        font-size: 46px;
+        margin-top: 0px;
+        }
+    .menu2 .col-6of12:first-child, .menu4 .col-6of12:first-child, .menu6 .col-6of12:first-child{
+        border-right: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        padding-top:5%;
+        }
+    .menu2 .col-6of12:nth-child(2), .menu4 .col-6of12:nth-child(2), .menu6 .col-6of12:nth-child(2){
+        margin-top: 0px;
+        padding-top: 0px;
+        }
+    .menu2 .col-6of12 p:nth-child(3), .menu4 .col-6of12 p:nth-child(3), .menu6 .col-6of12 p:nth-child(3){
+        margin-bottom:15px;
+        }
+    .menutxt p:nth-child(3n){
+        margin-bottom:10px;
+        }
+}
+
+/*//////End Media Queries//////*/
