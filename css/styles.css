@@ -667,11 +667,17 @@ footer .col-12of12{
 }
 
 @media all and (min-width:0px) and  (max-width:500px){
+    .home1{
+        background: linear-gradient(to bottom right,rgba(0,0,0,.5),rgba(0,0,0,.1)), url(../img/home1-mobile.jpg) no-repeat center;
+        }
     .home1, .menu1, .about1{
         min-height: 170px;
         }
     nav a {
         margin-right:30px;
+        }
+    .home2 .col-4of12 {
+        padding:3%;
         }
 }
 
