@@ -86,10 +86,13 @@ header{
 .logo a{
     color: #FFFFFF;
     }
+.logo a:hover{
+    color: #f2e422;
+    transition: .3s all ease-in-out;
+    }
 header h1{
     font-family: AmelianScript;
     font-size: 50px;
-    color: #FFFFFF;
     letter-spacing: 1.56px;
     font-weight: initial;
     }
@@ -110,6 +113,7 @@ nav a:last-child{
 	}	
 nav a:hover{
     color: #f2e422;
+    transition: .3s all ease-in-out;
     }
 /*//////End Nav//////*/
 
@@ -312,23 +316,6 @@ main{
     color: #000;
     align-self: center;
     }
-/*triangle tail*/
-/*
-.home5 .col-4of12::after { 
-    content: '';
-    position: relative;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-left: 35px solid transparent;
-    border-right: 35px solid transparent;
-    border-top: 50px solid #E1D218;
-    top: 64%;
-    left: 0px;
-    margin-left: -14px;
-    z-index: 99;
-    }
-*/
 .home5 .col-4of12{
     margin:0;
     }
@@ -654,6 +641,9 @@ footer .col-12of12{
         }
     .home7 .col-12of12{
         text-align: left;
+        }
+    .home7 h2{
+        margin-top:0;
         }
     .home8 .col-6of12{
         width: 80%;
