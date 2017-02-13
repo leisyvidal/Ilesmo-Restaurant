@@ -400,10 +400,10 @@ main{
     }
 .menutxt h3{
     font-family: GilroyBold;
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 0.94px;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     text-align: left;
     font-weight: lighter;
     }
@@ -412,7 +412,7 @@ main{
     }
 .menutxt p{
     font-family: Gilroy;
-    font-size: 14px;
+    font-size: 16px;
     color: #6E6E6E;
     letter-spacing: 0.82px;
     line-height: 1.3em;
@@ -663,6 +663,15 @@ footer .col-12of12{
     /*Footer*/
     footer .col-12of12{
         padding: 10% 2.5%;
+        }
+}
+
+@media all and (min-width:0px) and  (max-width:500px){
+    .home1, .menu1, .about1{
+        min-height: 170px;
+        }
+    nav a {
+        margin-right:30px;
         }
 }
 
