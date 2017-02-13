@@ -1,12 +1,12 @@
 @font-face{
     font-family: Gilroy;
     src:url(../fonts/Gilroy-Light.otf);
-    font-weight:normal;
+    font-weight: lighter;
     }
 @font-face{
     font-family: GilroyBold;
     src:url(../fonts/Gilroy-ExtraBold.otf);
-    font-weight:normal;
+    font-weight: lighter;
     }
 @font-face{
     font-family: AmelianScript;
@@ -177,6 +177,7 @@ main{
     background-size: 100%;
     padding:2% 10%;
     text-align: center;
+    margin-top: -5%;
     }
 .home2 .row{
     max-width: 800px;
@@ -238,11 +239,12 @@ main{
     padding:5%;
     }
 .home4 .col-6of12 h2{
-    font-family: Gilroy-ExtraBold;
+    font-family: GilroyBold;
     font-size: 21px;
     color: #000000;
     letter-spacing: 1.54px;
     text-transform: uppercase;
+    font-weight: lighter;
     }
 .home4 .col-6of12 p{
     max-width: 450px;
@@ -270,9 +272,15 @@ main{
     text-align: center;
     padding: 5%;
     }
-.home5 .col-8of12{ /*get rid of margin and reste to full width grid.*/
+.home5 .col-8of12{ /*get rid of margin and reset to full width grid.*/
     width:66.66%;;
     margin:0;
+    min-height: 250px;
+    display: flex;
+    align-content: center;
+    min-height: 250px;
+    justify-content: center;
+    flex-direction: column;
     }
 .home5 .col-8of12 p{
     font-family: GilroyBold;
@@ -289,6 +297,7 @@ main{
     align-items: center;
     display: flex;
     justify-content: center;
+    min-height: 250px;
     }
 .home5 .col-4of12{ /*get rid of margin and reset to full width grid.*/
     width:33.33%;
@@ -323,7 +332,7 @@ main{
 .home5 .col-4of12{
     margin:0;
     }
-.home6 .col-4of12, .home7 .col-12of12{ /*get rid of margin and reset to full width grid.*/
+.home6 .col-4of12, .home8 .col-12of12{ /*get rid of margin and reset to full width grid.*/
     padding:0;
     margin: 0;
     }
@@ -331,8 +340,35 @@ main{
     width:33.33%;
     margin-bottom: -1%;
     }
-.home7 .col-12of12{ /*get rid of margin and reset to full width grid.*/
-    width: 100%;
+.home7 .col-12of12{
+    padding:10%;
+    text-align: center;
+    }
+.home7 h2{
+    font-family: GilroyBold;
+    font-size: 21px;
+    color: #000000;
+    letter-spacing: 1.54px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    }
+.home7 p{
+    max-width: 500px;
+    margin: 20px auto 0px auto;
+    }
+.home7 hr{
+    border:0;
+    border-top:5px solid black;
+    width:20%;
+    display: inline-block;
+    }
+.home8 .col-6of12{ /*get rid of margin and reset to full width grid.*/
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    }
+.home8{
+    margin-bottom: -.5%;
     }
 /*//////End Home Page//////*/
 
@@ -369,6 +405,7 @@ main{
     text-transform: uppercase;
     margin-bottom: 5px;
     text-align: left;
+    font-weight: lighter;
     }
 .menutxt h3 span{
     color: #f2e422;
@@ -408,14 +445,56 @@ main{
 /*//////End Menu Page//////*/
 
 
-/*//////Start Footer//////*/
-/*
-footer{
-    background: #f2e422;
-    color: #FFF;
+
+/*//////Start About Page//////*/
+.about1{
+    background: linear-gradient(to bottom right,rgba(0,0,0,.4),rgba(0,0,0,.1)), url('../img/about1.jpg') no-repeat center;
+    background-size: 100%;
+    padding:15% 10%;
     text-align: center;
     }
-*/
+.about1 img{
+    width:40%;
+    }
+.about3 .col-4of12{
+    width:33.33%;
+    margin:0;
+    padding: 0;
+    }
+iframe{
+    margin-top: 50px;
+    }
+
+/*//////End About Page//////*/
+
+
+/*//////Start Footer//////*/
+footer{
+    background: #000;
+    text-align: center;
+    font-size: 30px;
+    }
+footer a{
+    margin-right:20px;
+    color: #9C9109;
+    }
+footer a:last-child{
+    margin-right:0px;
+    }
+footer a:hover{
+    color: #FFF;
+    transition: .35s all ease-in-out;
+    }
+footer p{
+    font-family: GilroyBold;
+    font-size: 16px;
+    color: #FFF;
+    letter-spacing: 1.54px;
+    text-transform: uppercase;
+    }
+footer .col-12of12{
+    padding: 2.5%;
+    }
 /*//////End Footer//////*/
 
 /*//////Start Media Queries//////*/
@@ -453,7 +532,7 @@ footer{
     .home1{
         background: url(../img/home1-mobile.jpg) no-repeat center;
         }
-    .home1 img{
+    .home1 img, .about1 img{
         display: none;
         }     
     .home2{
@@ -501,8 +580,6 @@ footer{
         background-size: cover;
         }
     
-    
-    
     .home3 img{
         width:80%;
         }
@@ -511,12 +588,22 @@ footer{
         }
     .home4 .col-6of12:nth-child(2){
         padding:15%;
+        padding-top:0px;
+        }
+    .home4 .col-6of12:first-child{
+        text-align: center;
+        }
+    .home4 .col-6of12:first-child img{
+        width:50%;
         }
     .home5 .col-8of12{
         width:100%;
         }
     .home5 .col-4of12{
-        width:33.33%;
+        width:50%;
+        height: 200px;
+        min-height: 200px;
+        overflow: hidden;
         }
     .home5 .col-4of12 p{
         font-size: 20px;
@@ -524,9 +611,17 @@ footer{
     .home5 .row{
         display: inline;
         }
+    .home5 .row::after{
+        display: none;
+        }
+    .home6 .col-4of12{
+        width: 50%;
+        height:200px;
+        margin-bottom: 0px;
+        overflow: hidden;
+        }
     
 
-    
     /*Menu Page*/
     .menu1{
         min-height: 150px;
@@ -550,6 +645,24 @@ footer{
         }
     .menutxt p:nth-child(3n){
         margin-bottom:10px;
+        }
+    
+    /*About Page*/
+    .about3 .col-4of12{
+        width:80%;
+        margin:0px 10% 5% 10%;
+        }
+    .home7 .col-12of12{
+        text-align: left;
+        }
+    .home8 .col-6of12{
+        width: 80%;
+        margin:0px 10% 5% 10%;
+        }
+    
+    /*Footer*/
+    footer .col-12of12{
+        padding: 10% 2.5%;
         }
 }
 
