@@ -267,6 +267,9 @@ main{
     margin-top: 10px;
     display: inline-block;
     }
+.home4 picture{
+    width:100%;
+    }
 .home4 .row .col-6of12:first-child{
     padding-left: 0;
     margin-left: 0;
