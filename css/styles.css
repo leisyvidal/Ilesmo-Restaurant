@@ -507,6 +507,7 @@ footer .col-12of12{
 /*//////End Footer//////*/
 
 /*//////Start Media Queries//////*/
+/*Tablet Media Query*/
 @media all and (min-width:568px) and  (max-width:800px){
     .home1{
         background: url(../img/home1-tablet.jpg) no-repeat center;
@@ -536,6 +537,7 @@ footer .col-12of12{
     
 }
 
+/*Mobile Media Query*/
 @media all and (min-width:0px) and  (max-width:568px){
     /*Nav*/
     .logo{
@@ -706,6 +708,7 @@ footer .col-12of12{
         }
 }
 
+/*Small device Query*/
 @media all and (min-width:0px) and  (max-width:500px){
     .home1{
         background: linear-gradient(to bottom right,rgba(0,0,0,.5),rgba(0,0,0,.1)), url(../img/home1-mobile.jpg) no-repeat center;
