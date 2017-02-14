@@ -1,12 +1,12 @@
 @font-face{
     font-family: Gilroy;
     src:url(../fonts/Gilroy-Light.otf);
-    font-weight: lighter;
+    font-weight: 400;
     }
 @font-face{
     font-family: GilroyBold;
     src:url(../fonts/Gilroy-ExtraBold.otf);
-    font-weight: lighter;
+    font-weight: 400;
     }
 @font-face{
     font-family: AmelianScript;
@@ -250,7 +250,7 @@ main{
     color: #000000;
     letter-spacing: 1.54px;
     text-transform: uppercase;
-    font-weight: lighter;
+    font-weight: 400;
     }
 .home4 .col-6of12 p{
     max-width: 450px;
@@ -348,7 +348,7 @@ main{
     color: #000000;
     letter-spacing: 1.54px;
     text-transform: uppercase;
-    font-weight: lighter;
+    font-weight: 400;
     }
 .home7 p{
     max-width: 500px;
@@ -414,7 +414,7 @@ main{
     text-transform: uppercase;
     margin-bottom: 8px;
     text-align: left;
-    font-weight: lighter;
+    font-weight: 400;
     }
 .menutxt h3 span{
     color: #f2e422;
@@ -521,7 +521,8 @@ footer .col-12of12{
         background: url(../img/about1-tablet.jpg) no-repeat center;
         } 
     .home4 .col-6of12:first-child{
-        width:38%
+        width:38%;
+        min-height:500px;
         }
     .home4 .col-6of12:nth-child(2){
         width:58%
